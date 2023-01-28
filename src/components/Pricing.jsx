@@ -280,12 +280,9 @@ function Pricing() {
                   <span class="text-sm ml-1">Expense Tracking</span>
                 </div>
                 <div class="ml-2 ">
-                  <a
-                    href="#"
-                    class="inline-block py-3 px-10 my-6 text-center   hover:text-primary border border-primary bg-primary hover:bg-white text-white duration-150  duration-200 rounded-sm"
-                  >
+                  <button class="inline-block py-3 px-10 my-6 text-center   hover:text-primary border border-primary bg-primary hover:bg-white text-white  duration-200 rounded-sm">
                     START FREE
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

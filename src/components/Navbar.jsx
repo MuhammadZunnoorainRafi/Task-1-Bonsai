@@ -6,9 +6,7 @@ function Navbar({ darkMode, setDarkMode }) {
   return (
     <div className=" max-w-5xl mb-20 mx-auto px-2">
       <div className="flex py-2 md:py-5 items-center justify-between relative ">
-        <a href="#" className="font-bold text-primary text-2xl">
-          bonsai
-        </a>
+        <h1 className="font-bold text-primary text-2xl">bonsai</h1>
 
         <div className="hidden ml-12 md:flex items-center relative z-10 justify-center space-x-6">
           <Dropdown label="Products" inline={true}>
