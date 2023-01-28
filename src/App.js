@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import FAQ from './components/FAQ';
+import FooterLast from './components/FooterLast';
+import Navbar from './components/Navbar';
+import Pricing from './components/Pricing';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={darkMode ? 'dark' : ''}>
+      <div className="dark:bg-gray-900 dark:text-gray-100">
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Pricing />
+        <FAQ />
+        <FooterLast />
+      </div>
     </div>
   );
 }
